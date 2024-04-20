@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid FC</title>
+    <style>
+        body {
+            background-color: #0074D9;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #001f3f;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .news-item {
+            background-color: #003366;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 300px;
+        }
+        .footer {
+            background-color: #001f3f;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Highlights</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </nav>
+        <h1>Real Madrid FC</h1>
+    </header>
+    <div class="container">
+        <h2>Latest News</h2>
+        <div class="news">
+            <div class="news-item">
+                <h3>Real Madrid Wins La Liga</h3>
+                <p>Real Madrid secured the La Liga title with a thrilling victory.</p>
+            </div>
+            <div class="news-item">
+                <h3>Ronaldo Scores Hat-trick</h3>
+                <p>Cristiano Ronaldo scored a hat-trick in the Champions League match.</p>
+            </div>
+            <!-- Add more news items here -->
+        </div>
+        <button onclick="toggleTheme()">Switch Theme</button>
+        <input type="text" placeholder="Search...">
+        <button>Set Reminder</button>
+        <div class="shopping-cart">
+            <!-- Add shopping cart items here -->
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2023 Real Madrid FC</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-theme");
+        }
+    </script>
+</body>
+</html>
